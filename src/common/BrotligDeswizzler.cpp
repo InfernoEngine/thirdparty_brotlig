@@ -20,7 +20,7 @@
 #include "BrotligDeswizzler.h"
 
 extern "C" {
-#include "brotli/c/enc/fast_log.h"
+#include "../enc/fast_log.h"
 }
 
 using namespace BrotliG;

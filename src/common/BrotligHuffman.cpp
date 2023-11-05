@@ -30,7 +30,7 @@
 #include <iostream>
 
 extern "C" {
-#include "brotli/c/enc/entropy_encode.h"
+#include "../enc/entropy_encode.h"
 }
 
 #include "BrotligHuffman.h"

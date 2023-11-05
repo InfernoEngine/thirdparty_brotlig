@@ -26,8 +26,8 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/common/context.h" 
-#include "brotli/c/enc/brotli_bit_stream.h"
+#include "../common/context.h" 
+#include "../enc/brotli_bit_stream.h"
 }
 
 #include "common/BrotligCommon.h"

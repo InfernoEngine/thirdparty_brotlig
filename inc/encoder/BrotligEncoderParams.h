@@ -26,9 +26,9 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/enc/encoder_dict.h"
-#include "brotli/c/enc/quality.h"
-#include "brotli/c/common/transform.h"
+#include "../enc/encoder_dict.h"
+#include "../enc/quality.h"
+#include "../common/transform.h"
 }
 
 #include "common/BrotligCommon.h"

@@ -20,8 +20,8 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/common/platform.h"
-#include "brotli/c/enc/fast_log.h"
+#include "../common/platform.h"
+#include "../enc/fast_log.h"
 }
 
 #include "BrotligCommon.h"

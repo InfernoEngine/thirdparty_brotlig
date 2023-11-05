@@ -26,7 +26,7 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/enc/command.h"
+#include "../enc/command.h"
 }
 
 #include "common/BrotligBitWriter.h"

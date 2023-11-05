@@ -26,9 +26,9 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/common/constants.h"
-#include "brotli/c/enc/bit_cost.h"
-#include "brotli/c/enc/cluster.h"
+#include "../common/constants.h"
+#include "../enc/bit_cost.h"
+#include "../enc/cluster.h"
 }
 
 #include "BrotligConstants.h"

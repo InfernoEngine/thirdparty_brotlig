@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Module>
+	
+	<GlobalSolutionName>ThirdParty</GlobalSolutionName>
+	<GlobalNamespace>potato</GlobalNamespace>
+
+	<StaticLibrary>
+		<Name>thirdparty_brotlig</Name>
+		<SourceRoot>src</SourceRoot>
+		<ExportedIncludeDirectory>inc</ExportedIncludeDirectory>
+		<LocalIncludeDirectory>inc</LocalIncludeDirectory>
+		<LocalIncludeDirectory>inc\common</LocalIncludeDirectory>
+		<LocalIncludeDirectory>inc\decoder</LocalIncludeDirectory>
+		<LocalIncludeDirectory>inc\encoder</LocalIncludeDirectory>
+		<ThirdParty>true</ThirdParty>
+
+		<ThirdPartySourceFile>
+			BrotligDecoder.cpp
+			BrotligEncoder.cpp
+			DataStream.cpp
+			common\BrotligDeswizzler.cpp
+			common\BrotligHuffman.cpp
+			common\BrotligMultithreading.cpp
+			common\BrotligSwizzler.cpp
+			common\BrotligUtils.cpp
+			decoder\PageDecoder.cpp
+			encoder\BrotligMetaBlock.cpp
+			encoder\PageEncoder.cpp
+		</ThirdPartySourceFile>
+
+		<Dependency>thirdparty_brotli</Dependency>
+
+	</StaticLibrary>
+
+</Module>

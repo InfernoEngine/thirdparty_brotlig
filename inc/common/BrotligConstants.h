@@ -20,7 +20,7 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/common/constants.h"
+#include "../common/constants.h"
 }
 
 #include "common/BrotligFlags.h"

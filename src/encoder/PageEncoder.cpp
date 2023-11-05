@@ -18,10 +18,10 @@
 // THE SOFTWARE.
 
 extern "C" {
-#include "brotli/c/enc/utf8_util.h"
-#include "brotli/c/enc/backward_references_hq.h"
-#include "brotli/c/common/dictionary.h"
-#include "brotli/c/enc/dictionary_hash.h"
+#include "../enc/utf8_util.h"
+#include "../enc/backward_references_hq.h"
+#include "../common/dictionary.h"
+#include "../enc/dictionary_hash.h"
 }
 
 #include "common/BrotligUtils.h"
@@ -44,14 +44,14 @@ static inline void ToBrotliEncoderParams(BrotligEncoderParams* in, BrotliEncoder
     out->hasher.type = in->hasher_params.type;
     out->hasher.bucket_bits = in->hasher_params.bucket_bits;
     out->hasher.block_bits = in->hasher_params.block_bits;
-    out->hasher.hash_len = in->hasher_params.hash_len;
+    //out->hasher.hash_len = in->hasher_params.hash_len;
     out->hasher.num_last_distances_to_check = in->hasher_params.num_last_distances_to_check;
     out->dist.distance_postfix_bits = in->dist_params.distance_postfix_bits;
     out->dist.num_direct_distance_codes = in->dist_params.num_direct_distance_codes;
     out->dist.alphabet_size_max = in->dist_params.alphabet_size_max;
     out->dist.alphabet_size_limit = in->dist_params.alphabet_size_limit;
     out->dist.max_distance = in->dist_params.max_distance;
-    out->dictionary = in->dictionary;
+    //out->dictionary = in->dictionary;
 }
 
 static inline void ToBrotligEncoderParams(BrotliEncoderParams* in, BrotligEncoderParams* out)
@@ -66,14 +66,14 @@ static inline void ToBrotligEncoderParams(BrotliEncoderParams* in, BrotligEncode
     out->hasher_params.type = in->hasher.type;
     out->hasher_params.bucket_bits = in->hasher.bucket_bits;
     out->hasher_params.block_bits = in->hasher.block_bits;
-    out->hasher_params.hash_len = in->hasher.hash_len;
+    //out->hasher_params.hash_len = in->hasher.hash_len;
     out->hasher_params.num_last_distances_to_check = in->hasher.num_last_distances_to_check;
     out->dist_params.distance_postfix_bits = in->dist.distance_postfix_bits;
     out->dist_params.num_direct_distance_codes = in->dist.num_direct_distance_codes;
     out->dist_params.alphabet_size_max = in->dist.alphabet_size_max;
     out->dist_params.alphabet_size_limit = in->dist.alphabet_size_limit;
     out->dist_params.max_distance = in->dist.max_distance;
-    out->dictionary = in->dictionary;
+    //out->dictionary = in->dictionary;
 }
 
 static ContextType ChooseBrotligContextMode(const BrotligEncoderParams* params,

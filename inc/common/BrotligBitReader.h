@@ -22,7 +22,7 @@
 #include <cassert>
 
 extern "C" {
-#include "brotli/c/common/platform.h"
+#include "../common/platform.h"
 }
 
 #include "BrotligCommon.h"

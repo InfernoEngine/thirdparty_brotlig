@@ -26,8 +26,8 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/enc/hash.h"
-#include "brotli/c/enc/memory.h"
+#include "../enc/hash.h"
+#include "../enc/memory.h"
 }
 
 #include "common/BrotligCommand.h"

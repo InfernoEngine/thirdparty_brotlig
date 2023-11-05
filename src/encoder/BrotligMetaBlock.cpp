@@ -28,8 +28,8 @@
 #include <numeric>
 
 extern "C" {
-#include "brotli/c/enc/prefix.h"
-#include "brotli/c/enc/entropy_encode.h"
+#include "../enc/prefix.h"
+#include "../enc/entropy_encode.h"
 }
 
 #include "common/BrotligSwizzler.h"

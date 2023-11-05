@@ -27,12 +27,12 @@
 #pragma once
 
 extern "C" {
-#include "brotli/c/include/brotli/types.h"
-#include "brotli/c/common/constants.h"
-#include "brotli/c/enc/entropy_encode.h"
-#include "brotli/c/enc/quality.h"
-#include "brotli/c/common/context.h"
-#include "brotli/c/enc/bit_cost.h"
+#include "brotli/types.h"
+#include "../common/constants.h"
+#include "../enc/entropy_encode.h"
+#include "../enc/quality.h"
+#include "../common/context.h"
+#include "../enc/bit_cost.h"
 }
 
 #include "BrotligCommon.h"
