@@ -57,10 +57,20 @@ typedef enum {
 } BROTLIG_ERROR;
 
 #if defined(WIN32) || defined(_WIN64)
+#ifdef BROTLIG_SHARED_LIB
+#ifdef BROTLIG_SHARED_LIB_EXPORT
+#define BROTLIG_API __declspec(dllexport) __cdecl
+#else
+#define BROTLIG_API __declspec(dllimport) __cdecl
+#endif
+#else
 #define BROTLIG_API __cdecl
+#endif
+#define BROTLIG_API_PTR __cdecl
 #else
 #define BROTLIG_API
+#define BROTLIG_API_PTR
 #endif
 
 // BROTLIG_Feedback_Proc for user to handle status on CPU encoder and CPU decoder processing cycles
-typedef bool(BROTLIG_API* BROTLIG_Feedback_Proc)(float fProgress);
+typedef bool(BROTLIG_API_PTR* BROTLIG_Feedback_Proc)(float fProgress);
