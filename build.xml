@@ -14,6 +14,7 @@
 		<LocalIncludeDirectory>inc\encoder</LocalIncludeDirectory>
 		<ThirdParty>true</ThirdParty>
 
+		<PreprocessorDefines>NOMINMAX</PreprocessorDefines>
 		<ThirdPartySharedGlobalExportDefine>BROTLIG_SHARED_LIB</ThirdPartySharedGlobalExportDefine>
 		<ThirdPartySharedLocalBuildDefine>BROTLIG_SHARED_LIB_EXPORT</ThirdPartySharedLocalBuildDefine>
 

@@ -19,8 +19,6 @@
 
 #pragma once
 
-#define NOMINMAX
-
 #include <algorithm>
 #include <assert.h>
 #include <cmath>
